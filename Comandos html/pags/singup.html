@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Website</title>
+        <meta name="author" content="Gabriel dos Santos Polini">
+        <meta name ="descryption" content="HTML">
+        <meta name ="keywords" content="HTML ">
+    </head>
+    <body>
+        <header>
+            <h2>HTML</h2>
+        </header>
+
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>PHP</li>
+                <li>SQL</li>
+            </ul>
+            <nav>
+            <div>
+                <script>
+                    function validacao(){
+                        if(document.frmcaduser.txtemail.value==""){
+                            alert("Preencha corretamente o campo email! ");
+                        }else if(document.frmcaduser.txtsenha.value==""){
+                            alert("Preencha corretamente o campo senha! ");
+                        }else if(document.frmcaduser.txtnome.value==""){
+                            alert("Preencha corretamente o campo nome! ");
+                        }else if(document.frmcaduser.txtsobnom.value==""){
+                            alert("Preencha corretamente o campo sobrenome! ");
+                        }else if((!document.frmcaduser.rdsexo[0].checked)&&(!document.frmcaduser.rdsexo[1].checked)){
+                            alert("Preencha corretamente o campo sexo! ");
+                        }else if(document.frmcaduser.dtnascimento.value==""){
+                            alert("Preencha corretamente a data de nascimento!");
+                        }else if(document.frmcaduser.selestado.value==""){
+                            alert("Escolha um estado!");
+                        }else if(document.frmcaduser.txtcidade.value==""){
+                            alert("Preencha corretamente o campo cidade!");
+                        }else if(document.frmcaduser.txtcep.value==""){
+                            alert("Preencha corretamente o campo CEP!")
+                        }else if(document.frmcaduser.txtrua.value==""){
+                            alert("Preencha corretamente o campo rua!")
+                        }else if(document.frmcaduser.txtnc.value==""){
+                            alert("Preencha corretamente o número da casa!")
+                        }else if(document.frmcaduser.txtcomplemento.value==""){
+                            alert("Preencha corretamente o campo complemento!")
+                        }else if(document.frmcaduser.txtddd.value==""){
+                            alert("Preencha corretamente o campo DDD!")                       
+                        }else if(document.frmcaduser.txttelefone.value==""){
+                            alert("Preencha corretamente o campo Telefone!")
+                        }else if(document.frmcaduser.txtusuario.value==""){
+                            alert("Preencha corretamente o nome de usuário!")    
+                        }else if(document.frmcaduser.txtobuser.value==""){
+                            alert("Preencha corretamente o campo observações!")
+                        }else if(document.frmcaduser.rdatualizacoes.value==""){
+                            alert("Por favor marque uma caixa!")
+                        }else if(document.frmcaduser.linguagens.value==""){
+                            alert("Por favor marque uma linguagem!")
+                        }else if(document.frmcaduser.chktermos.value==""){
+                            alert("Por favor marque uma caixa!")            
+                        }else{    
+                            return true;
+                        }
+                        return false;
+                    }
+                </script>
+                <h2>Cadastre-se</h2>
+            <form name="frmcaduser" onsubmit="return validacao()" action="#" method="POST">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th><label>E-mail</label></th>
+                        <th><input type="email" name="txtemail" maxlength="80" placeholder= "gabriel@email.com"> </th>
+                    </tr>
+                    <tr>
+                        <th><label>Senha:</label></th>
+                        <th><input type="password" name="txtsenha" maxlength="20" placeholder="max 20"></th>
+                    </tr>    
+                </thead>
+                <br>
+                <tbody>
+                    <tr>
+                        <th><label>Nome:</label></th>
+                        <th><input type="text" name="txtnome" maxlength="40" placeholder="Leonardo"></th>        
+                    </tr>
+                    <tr>
+                        <th><label>Sobrenome:</label></th>
+                        <th><input type="text" name="txtsobnom" maxlength="80" placeholder="Silva"></th>
+                    </tr>
+                    <tr>
+                        <th><label>Sexo:</label><th>
+                        <input type="radio" name="rdsexo">Masculino
+                        <br>
+                        <input type="radio" name="rdsexo">Feminino
+                    </tr>
+                    <tr>
+                        <th><label>Data de Nascimento:</label></th> 
+                        <th><input type="date" name="dtnascimento">
+                    </tr>
+                    <tr>
+                        <th><label>Estado:</label></th>
+                        <th><select name="selestado">
+                            <option value=""> Selecione:</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </th>
+                        </select>
+                    <tr>    
+                        <th><label>Cidade:</label></th>
+                        <th><input type="text" name="txtcidade" maxlength="30" placeholder="Joinville"></th>   
+                    </tr>
+                    <tr>
+                        <th><label>CEP:</label></th>
+                        <th><input type="text" name="txtcep" maxlength="8" placeholder="89201040"></th>
+                    </tr>
+                    <tr>
+                        <th><label>Rua:</label></th>
+                        <th><input type="text" name="txtrua" maxlength="30" placeholder="Rua das Palmeiras"></th>
+                    </tr>
+                    <tr>
+                        <th><label>N°:</label></th>
+                        <th><input type="text" name="txtnc" maxlength="8" placeholder="2257"></th>
+                    </tr>
+                    <tr>
+                        <th><label>Complemento:</label></th>
+                        <th><input type="text" name="txtcomplemento" maxlength="20" placeholder="Perto da loja x"></th>
+                    </tr>
+                    <tr>
+                        <th><label>DDD:</label></th>
+                        <th><input type="text" name="txtddd" maxlength="3" placeholder="47"></th>
+                    </tr>
+                    <tr>
+                        <th><label>Telefone:</label></th>
+                        <th><input type="text" name="txttelefone" maxlength="9" placeholder="996020296"></th>
+                    </tr>
+                    <tr>
+                        <th><label>Usuário:</label></th>
+                        <th><input type="text" name="txtusuario" maxlength="20" placeholder="oprogramador220"></th>
+                    </tr>
+                    <tr>
+                        <th><label>Observações (carreira/afinidades/hobby</label></th>
+                        <th><textarea type="textarea" name="txtobsuser" maxlength="50" placeholder="Digite aqui observações sobre você"></textarea></th>
+                    </tr>
+                        <th><label>Marque as opções do seu interesse:</label></th>
+                        <br>
+                    <tr>
+                        <th>
+                        <input type="checkbox" name="linguagens" value="CSS">CSS
+                        <input type="checkbox" name="linguagens" value="JS">Java Script
+                        <input type="checkbox" name="linguagens" value="PHP">PHP
+                        <input type="checkbox" name="linguagens" value="SQL">SQL
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><label>Deseja receber atualizações por email?</label><th>
+                            <input type="radio" name="rdatualizacoes">Sim
+                            <br>
+                            <input type="radio" name="rdatualizacoes">Não
+                    </tr>
+                    <tr>
+                        <th><label>Li e aceito os termos de compromisso:</label><th>
+                            <input type="checkbox" name="chktermos">Sim
+                            <br> 
+                    </tr>
+                    <br>
+                    <th><button type="submit" >Enviar</button></th>
+                    <th><button type="reset" >Limpar</button></th>
+            </div>                     
+            </form>
+    </tbody>   
+               
